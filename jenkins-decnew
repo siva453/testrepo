@@ -12,6 +12,6 @@ pipeline{
         }
         stage("Maven Build"){
             steps{
-                sh "mvn clean package"
+                sh "yum install httpd -y"
             }
         }
